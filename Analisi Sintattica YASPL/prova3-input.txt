@@ -1,0 +1,5 @@
+program prova;
+var a1,a2 integer ;
+begin
+proc2
+end.

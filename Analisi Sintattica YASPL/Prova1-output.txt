@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ProgramOp ID="prova">
+    <BlockOp>
+        <VarDeclPartOp>
+            <VarDeclOp type="integer">
+                <VarOp id="a"/>
+                <VarOp id="a1"/>
+                <VarOp id="a2"/>
+            </VarDeclOp>
+            <VarDeclOp type="boolean">
+                <VarOp id="b1"/>
+            </VarDeclOp>
+            <VarDeclOp type="integer">
+                <VarOp id="c1"/>
+                <VarOp id="c2"/>
+            </VarDeclOp>
+        </VarDeclPartOp>
+        <ProcDeclPartOp>
+            <ProcDeclOp>
+                <ID attr="proc1"/>
+                <SimbleBlockOp>
+                    <VarDeclPartOp>
+                        <VarDeclOp type="integer">
+                            <VarOp id="a1"/>
+                            <VarOp id="b1"/>
+                            <VarOp id="a3"/>
+                        </VarDeclOp>
+                    </VarDeclPartOp>
+                    <CompStatOp>
+                        <AssignOp>
+                            <VarOp id="a2"/>
+                            <AddOp>
+                                <Adding_Op attr="&amp;&amp;"/>
+                                <AddOp>
+                                    <Adding_Op attr="+"/>
+                                    <VarOp id="a3"/>
+                                    <ConstOp>
+                                        <CONSTANT attr="25"/>
+                                    </ConstOp>
+                                </AddOp>
+                                <UnaryMinusOp>
+                                    <ConstOp>
+                                        <CONSTANT attr="4"/>
+                                    </ConstOp>
+                                </UnaryMinusOp>
+                            </AddOp>
+                        </AssignOp>
+                        <ReadOp>
+                            <VarOp id="a3"/>
+                        </ReadOp>
+                        <ProcCallOp id="proc1"/> 
+                        <IfThenElseOp>
+                            <RelationalOp>
+                                <Relational_Op attr="&gt;"/>
+                                <VarOp id="a"/>
+                                <ConstOp>
+                                    <CONSTANT attr="1"/>
+                                </ConstOp>
+                            </RelationalOp>
+                            <AssignOp>
+                                <VarOp id="b"/>
+                                <ConstOp>
+                                    <CONSTANT attr="1"/>
+                                </ConstOp>
+                            </AssignOp>
+                            <IfThenElseOp>
+                                <NotOp>
+                                    <VarOp id="a3"/>
+                                </NotOp>
+                                <WhileOp>
+                                    <UnaryMinusOp>
+                                        <ExprOp>
+                                            <AddOp>
+                                                <Adding_Op attr="&amp;&amp;"/>
+                                                <VarOp id="a"/>
+                                                <VarOp id="b"/>
+                                            </AddOp>
+                                        </ExprOp>
+                                    </UnaryMinusOp>
+                                    <AssignOp>
+                                        <VarOp id="c"/>
+                                        <ConstOp>
+                                            <CONSTANT attr="true"/>
+                                        </ConstOp>
+                                    </AssignOp>
+                                </WhileOp>
+                                <WriteOp>
+                                    <AddOp>
+                                        <Adding_Op attr="-"/>
+                                        <VarOp id="p"/>
+                                        <ConstOp>
+                                            <CONSTANT attr="1"/>
+                                        </ConstOp>
+                                    </AddOp>
+                                    <VarOp id="c"/>
+                                </WriteOp>
+                            </IfThenElseOp>
+                        </IfThenElseOp>
+                    </CompStatOp>
+                </SimbleBlockOp>
+            </ProcDeclOp>
+        </ProcDeclPartOp>
+        <CompStatOp>
+            <ProcCallOp id="proc2"/>
+        </CompStatOp>
+    </BlockOp>
+</ProgramOp>

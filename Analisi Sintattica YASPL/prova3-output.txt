@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ProgramOp ID="prova">
+    <BlockOp>
+        <VarDeclPartOp>
+            <VarDeclOp type="integer">
+                <VarOp id="a1"/>
+                <VarOp id="a2"/>
+            </VarDeclOp>
+        </VarDeclPartOp>
+        <ProcDeclPartOp/>
+        <CompStatOp>
+            <ProcCallOp id="proc2"/>
+        </CompStatOp>
+    </BlockOp>
+</ProgramOp>

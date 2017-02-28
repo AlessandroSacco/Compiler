@@ -1,0 +1,1 @@
+You can't use this operator && with a(n) INTEGER and a(n) BOOLEAN At instruction a1+a1&&a2

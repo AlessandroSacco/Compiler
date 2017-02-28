@@ -1,0 +1,99 @@
+program test;
+var input,n1,n2,n integer;
+procedure sum;
+var sum,i integer;
+begin
+	sum := n1;
+	i := 1;
+	while(i <= n2) do 
+		begin
+			sum := sum +1;
+			i := i+1
+		end;
+	->("Il risultato della somma dei due numeri è: ",sum)
+end;
+procedure mult;
+var mult integer;
+begin 
+	mult := n1;
+	while(n2>1) do 
+		begin
+			mult := mult + n1;
+			n2 := n2-1
+		end;
+	->("Il risultato della moltiplicazione dei due numeri è: ",mult)
+end;
+procedure div;
+var q, div integer;
+begin 
+	q := n1;
+	while(q>0) do
+		 begin 
+		 	q := q - n2; 
+		 	div := div +1
+		 end;
+	->("Il risultato della divisione tra i due numeri è: ",div)
+end;
+procedure pow;
+var pow integer;
+begin
+	pow := n1;
+	while(n2>1) do 
+		begin 
+			pow := pow * n1; 
+			n2 := n2-1
+		end;
+	->("Il risultato dell'elevamento a potenza è: ",pow)
+end;
+procedure fib;
+var a,b,c,i integer;
+begin
+	if (n <= 2) then
+		->("Il numero di fibonacci è: 1");
+   a:=1;
+   b:=1;
+   i:=0;
+   while(i<n-2) do
+   	begin
+   		c:=a+b;
+   		b:=a;
+   		a:=c;
+   		i:=i+1
+   	end;
+	->("Il numero di fibonacci è: ",c)
+end;
+begin
+	->("Inserire 1 per effettuare la somma tra interi\n2 per la moltiplicazione di due numeri utilizzando la somma,\n3 per la divisione intera fra due numeri positivi,\n4 per l’elevamento a potenza,\n5 per la successione di Fibonacci\n");
+	<-(input);
+	if(input == 1) then
+		begin
+			->("Inserisci i due numeri\n");
+			<-(n1,n2);
+			sum
+		end
+	else if(input == 2) then
+		begin
+			->("Inserisci i due numeri\n");
+			<-(n1,n2);
+			mult
+		end
+	else if(input == 3) then 
+		begin
+			->("Inserisci i due numeri\n");
+			<-(n1,n2);
+			div
+		end
+	else if(input == 4) then
+		begin
+			->("Inserisci i due numeri\n");
+			<-(n1,n2);
+			pow
+		end
+	else if(input == 5) then
+		begin
+			->("Inserisci il numero\n");
+			<-(n);
+			fib
+		end
+	else ->("Il numero inserito è errato\n")
+end.

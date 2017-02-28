@@ -1,0 +1,7 @@
+program	prova;
+var	a,a1,a2 integer;	
+b1 boolean;
+c1,c2 integer;
+begin
+if(a>b1) then c1:=5
+end.

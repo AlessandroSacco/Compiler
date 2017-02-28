@@ -1,0 +1,6 @@
+program	prova;
+var	a1 integer;	
+a2 boolean;
+begin
+->(a3)
+end.

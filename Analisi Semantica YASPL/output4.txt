@@ -1,0 +1,1 @@
+You can't assign a BOOLEAN to a INTEGER variable At instruction: a1:=a2
